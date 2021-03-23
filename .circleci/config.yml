@@ -5,7 +5,13 @@ orbs:
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.7.2-stretch-node
+
+      - image: circleci/ruby:2.7.2
+        environment:
+          PGHOST: localhost
+          PGUSER: acebook-loungin-lizards
+          RAILS_ENV: test
+
       - image: postgres:9.5
         environment:
           POSTGRES_USER: acebook-loungin-lizards
