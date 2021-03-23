@@ -4,6 +4,7 @@ orbs:
 
 jobs:
   build:
+    working_directory: ~/acebook-loungin-lizards
     docker:
 
       - image: circleci/ruby:2.7.2
