@@ -2,5 +2,5 @@
 <%= form_for @post do |form| %>
   <input type="hidden" name="_method" value="PATCH">
   <textarea name="post" id="post_message"><%= @post.message %></textarea><br>
-  <input type="submit" id="submit_<%= @post.id %>" value="Submit post">
+  <input type="submit" id="submit_<%= @post.id %>" value="Submit post" class="btn btn-info">
 <% end %>
